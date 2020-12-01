@@ -9,22 +9,22 @@
 
 namespace uiuc {
   Cube::Cube() {
-    length_ = 1;
+    this->length_ = 1;
   }
 
   Cube::Cube(double length) {
-    length_ = length;
+    this->length_ = length;
   }
 
   double Cube::getVolume() {
-    return length_ * length_ * length_;
+    return this->length_ * this->length_ * this->length_;
   }
 
   double Cube::getSurfaceArea() {
-    return 6 * length_ * length_;
+    return 6 * this->length_ * this->length_;
   }
 
   void Cube::setLength(double length) {
-    length_ = length;
+    this->length_ = length;
   }
 }
